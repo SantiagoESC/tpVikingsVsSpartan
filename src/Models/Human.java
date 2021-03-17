@@ -1,28 +1,62 @@
 package Models;
 
-import Interface.Orinar;
+import Interface.ToPee;
 
-public abstract class Human implements Orinar {
+public abstract class Human implements ToPee {
     //region Properties
-    protected String Nombre;
-    protected Integer Edad;
-    protected Integer Peso;
+    protected String Name;
+    protected Integer Age;
+    protected Integer Weight;
+    protected Integer Dni;
     //endregion
 
-    //Region Properties Implements
-    private  Orinar orinar;
+    //Region Properties
+    private ToPee toPee;
     //endregion
     //region Constructor
 
-    public Human(String nombre, Integer edad, Integer peso) {
-        Nombre = nombre;
-        Edad = edad;
-        Peso = peso;
+    public Human(String name, Integer age, Integer weight, Integer dni) {
+        Name = name;
+        Age = age;
+        Weight = weight;
+        Dni = dni;
     }
 
     //endregion
 
-    //region Methods
+    //region Getters && Setters
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public Integer getAge() {
+        return Age;
+    }
+
+    public void setAge(Integer age) {
+        Age = age;
+    }
+
+    public Integer getWeight() {
+        return Weight;
+    }
+
+    public void setWeight(Integer weight) {
+        Weight = weight;
+    }
+
+    public Integer getDni() {
+        return Dni;
+    }
+
+    public void setDni(Integer dni) {
+        Dni = dni;
+    }
 
     //endregion
 }
