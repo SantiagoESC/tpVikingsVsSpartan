@@ -10,18 +10,26 @@ public abstract class Human implements ToPee {
     protected Integer Dni;
     //endregion
 
-    //Region Properties
+    //region Properties Interface
     private ToPee toPee;
     //endregion
+
     //region Constructor
 
-    public Human(String name, Integer age, Integer weight, Integer dni) {
+    public Human(String name, Integer age, Integer weight, Integer dni,ToPee toPeeImp) {
         Name = name;
         Age = age;
         Weight = weight;
         Dni = dni;
+        this.toPee = toPeeImp;
     }
 
+    //endregion
+
+    //region Methods
+    public void ToPee(){
+        toPee.ToPee();
+    }
     //endregion
 
     //region Getters && Setters
@@ -58,5 +66,12 @@ public abstract class Human implements ToPee {
         Dni = dni;
     }
 
-    //endregion
+    public ToPee getToPee() {
+        return toPee;
+    }
+
+    public void setToPee(ToPee toPee) {
+        this.toPee = toPee;
+    }
+//endregion
 }

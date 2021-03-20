@@ -1,6 +1,9 @@
 package Models;
 
+import Implements.ToPeeVikingImpl;
 import Interface.ToPee;
+
+import java.util.Objects;
 
 public class Viking extends Human{
 
@@ -9,22 +12,41 @@ public class Viking extends Human{
     private Integer ToleranceNormal;
     //endregion
 
-    //region Properties Implements
-    private ToPee toPee;
-    //endregion
-
     //region Constructor
-    public Viking(String name, Integer age, Integer weight, Integer dni, Integer professionalDrinker, Integer toleranceNormal) {
-        super(name, age, weight,dni);
+    public Viking(String name, Integer age, Integer weight, Integer dni, Integer professionalDrinker, Integer toleranceNormal, ToPeeVikingImpl toPeeViking) {
+        super(name, age, weight,dni,toPeeViking);
         this.ProfessionalDrinker = professionalDrinker;
         this.ToleranceNormal = toleranceNormal;
     }
     //endregion
 
     //region Methods
-    public void ToPee(){
-        toPee.ToPee();
+
+    @Override
+    public String toString() {
+        return "Viking{" +
+                "Name='" + Name + '\'' +
+                ", Age=" + Age +
+                ", Weight=" + Weight +
+                ", Dni=" + Dni +
+                ", ProfessionalDrinker=" + ProfessionalDrinker +
+                ", ToleranceNormal=" + ToleranceNormal +
+                '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Viking viking = (Viking) o;
+        return Objects.equals(ProfessionalDrinker, viking.ProfessionalDrinker) && Objects.equals(ToleranceNormal, viking.ToleranceNormal);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(ProfessionalDrinker, ToleranceNormal);
+    }
+
     //endregion
 
     //region Getters && Setters

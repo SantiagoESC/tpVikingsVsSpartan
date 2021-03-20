@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5844e492-2dcf-478b-a3de-4fb49077d141" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Implements/DrinkBeerSpartanImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Implements/DrinkBeerVikingImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Implements/ToPeeSpartanImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Implements/ToPeeVikingImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interface/DrinkBeer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Implements/ToPeeSpartanStandUpImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Models/Confrontation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Implements/OrinarVikingImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interface/Orinar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/ToPee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Implements/ToPeeSpartanImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Implements/ToPeeSpartanImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Implements/ToPeeVikingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Implements/ToPeeVikingImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interface/ToPee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interface/ToPee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Spartan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Spartan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Models/Viking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Viking.java" afterDir="false" />
@@ -44,6 +41,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestSpring/Test" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -87,12 +86,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>19</line>
+          <line>43</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

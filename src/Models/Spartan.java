@@ -1,31 +1,52 @@
 package Models;
 
+import Implements.ToPeeSpartanImpl;
 import Interface.ToPee;
+
+import java.util.Objects;
 
 public class Spartan extends Human{
 
     //region Properties
     private  Integer ExtraTolerance;
     private Integer DrinkerNormal;
-
-    private ToPee toPee;
     //endregion
 
     //region Constructor
-    public Spartan(String name, Integer age, Integer weight, Integer dni, Integer extraTolerance, Integer drinkerNormal) {
-        super(name, age, weight,dni);
+    public Spartan(String name, Integer age, Integer weight, Integer dni, Integer extraTolerance, Integer drinkerNormal, ToPeeSpartanImpl toPeeSpartan) {
+        super(name, age, weight,dni,toPeeSpartan);
         this.ExtraTolerance = extraTolerance;
         this.DrinkerNormal = drinkerNormal;
     }
     //endregion
 
     //region Methods
-    public void ToPee(){
 
-        toPee.ToPee();
+    @Override
+    public String toString() {
+        return "Spartan{" +
+                "Name='" + Name + '\'' +
+                ", Age=" + Age +
+                ", Weight=" + Weight +
+                ", Dni=" + Dni +
+                ", ExtraTolerance=" + ExtraTolerance +
+                ", DrinkerNormal=" + DrinkerNormal +
+                '}';
     }
 
-    //endregion
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Spartan spartan = (Spartan) o;
+        return ExtraTolerance.equals(spartan.ExtraTolerance) && DrinkerNormal.equals(spartan.DrinkerNormal);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(ExtraTolerance, DrinkerNormal);
+    }
+//endregion
 
     //region Getters && Setters
 
